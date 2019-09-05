@@ -1,0 +1,8 @@
+#Write a command-line program that prints out the sum of two non-negative integers as input arguments. You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+
+def sum_miso(a, b):
+    return a+b
+
+  
+print(sum_miso(3,5))
