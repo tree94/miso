@@ -1,5 +1,5 @@
+#1번 문제와 답
 #Write a command-line program that prints out the sum of two non-negative integers as input arguments. You must not use any built-in BigInteger library or convert the inputs to integer directly.
-
 
 #a = input() #your inputs 1 
 #b = input() #your inputs 2
@@ -15,3 +15,29 @@ for digit in b:
         int_b = 10 * int_b + value[digit]
 
 print(int_a + int_b)
+
+
+#2번
+DATA = [
+  ['오백삼십조칠천팔백구십만천오백삼십구', '삼조사천이만삼천구'],
+  ['육십사억삼천이만팔만칠천육백구', '사십삼'],
+  ['구백육십조칠천억팔천이백삼십이만칠천일', '사십삼조오천이백억육천구백삼십만일'],
+  ['이천구백육십사조삼천오백칠십이만삼천구백구십', '삼천사백오십조일억이천일만육백사십삼'],
+  ['사십오억삼천육십만오백구십', '칠십억천이백삼십오만칠천구십이'],
+  ['천백십일', '구천오백구십구'],
+  ['오억사천', '백십일'],
+  ['만오천사백삼십', '십구만삼천오백'],
+  ['일조', '삼'],
+  ['일억', '만'],
+]
+
+def check_output(arr):
+    argv1, argv2, a, b = arr
+    print(arr)
+    
+
+for pair in DATA:
+    a, b = pair
+    print(a, '+', b, '=', check_output([sys.argv[1], sys.argv[2], a, b], encoding='utf-8').strip())
+
+    
